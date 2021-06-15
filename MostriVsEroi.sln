@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi", "MostriVsEroi\MostriVsEroi.csproj", "{B1459B35-3F4D-4BAD-9EDC-C8E83EA8F26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.MockRepository", "MostriVsEroi.MockRepository\MostriVsEroi.MockRepository.csproj", "{F592D88B-0299-4A28-8A13-92B77FF23369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.Services", "MostriVsEroi.Services\MostriVsEroi.Services.csproj", "{D27B2E5C-1AC5-49EF-AB19-FD667B0563D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.Core", "MostriVsEroi.Core\MostriVsEroi.Core.csproj", "{2D77F099-3C82-4DC6-A9A5-481E5AFCF504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.SchermataServices", "MostriVsEroi.SchermataServices\MostriVsEroi.SchermataServices.csproj", "{32CA330F-74EE-4C1F-904B-652EAB7B002F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.View", "MostriVsEroi.View\MostriVsEroi.View.csproj", "{65ED2573-3D32-4B41-9485-72A8CE62EB29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1459B35-3F4D-4BAD-9EDC-C8E83EA8F26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1459B35-3F4D-4BAD-9EDC-C8E83EA8F26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1459B35-3F4D-4BAD-9EDC-C8E83EA8F26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1459B35-3F4D-4BAD-9EDC-C8E83EA8F26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F592D88B-0299-4A28-8A13-92B77FF23369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F592D88B-0299-4A28-8A13-92B77FF23369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F592D88B-0299-4A28-8A13-92B77FF23369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F592D88B-0299-4A28-8A13-92B77FF23369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27B2E5C-1AC5-49EF-AB19-FD667B0563D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27B2E5C-1AC5-49EF-AB19-FD667B0563D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27B2E5C-1AC5-49EF-AB19-FD667B0563D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27B2E5C-1AC5-49EF-AB19-FD667B0563D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D77F099-3C82-4DC6-A9A5-481E5AFCF504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D77F099-3C82-4DC6-A9A5-481E5AFCF504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D77F099-3C82-4DC6-A9A5-481E5AFCF504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D77F099-3C82-4DC6-A9A5-481E5AFCF504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CA330F-74EE-4C1F-904B-652EAB7B002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CA330F-74EE-4C1F-904B-652EAB7B002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CA330F-74EE-4C1F-904B-652EAB7B002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CA330F-74EE-4C1F-904B-652EAB7B002F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ED2573-3D32-4B41-9485-72A8CE62EB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ED2573-3D32-4B41-9485-72A8CE62EB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ED2573-3D32-4B41-9485-72A8CE62EB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ED2573-3D32-4B41-9485-72A8CE62EB29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B61B3E2F-76C9-4B98-B24E-FA2D9C4B591C}
+	EndGlobalSection
+EndGlobal
