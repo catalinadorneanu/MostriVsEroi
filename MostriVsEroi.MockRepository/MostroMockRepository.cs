@@ -10,7 +10,7 @@ namespace MostriVsEroi.MockRepository
 {
    public class MostroMockRepository
     {
-        public List<Mostro> FetchMostri(Eroe eroe)
+        public List<Mostro> FetchMostri(Utente utente)
         {
             List<Mostro> mostro = new List<Mostro>();
             mostro.Add(new Mostro("Aboleth","Cultista", new Arma("Imprecazione", 5), 1,20));

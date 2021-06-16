@@ -12,9 +12,9 @@ namespace MostriVsEroi.Services
     {
         
             static MostroMockRepository mmr = new MostroMockRepository();
-            public static List<Mostro> GetMostri(Eroe eroe)
+            public static List<Mostro> GetMostri(Utente utente)
             {
-            return mmr.FetchMostri(eroe);
+            return mmr.FetchMostri(utente);
             }
         
     }
