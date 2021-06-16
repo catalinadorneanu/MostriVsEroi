@@ -15,5 +15,14 @@ namespace MostriVsEroi.Services
         {
             return emr.FetchEroi(utente);
         }
+        public static void AddEroe(Utente utente, Eroe eroe)
+        {
+            emr.AggiungiEroe(utente, eroe);
+        }
+
+        public static void DeleteEroe(Utente utente, Eroe eroeEliminato)
+        {
+            emr.CancellaEroe(utente, eroeEliminato);
+        }
     }
 }

@@ -30,10 +30,6 @@ namespace MostriVsEroi.View
                 }
 
             }
-
-
-
-
         }
     }
 }

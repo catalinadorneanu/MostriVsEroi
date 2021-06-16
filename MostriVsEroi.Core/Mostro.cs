@@ -10,16 +10,18 @@ namespace MostriVsEroi.Core
         public string TipoMostro { get; set; }
         public Arma Arma { get; set; } = new Arma();
         public int LivelloMostro { get; set; }
+        public int PuntiVita { get; set; }
         public Mostro()
         {
 
         }
-        public Mostro(string nomeMostro, string tipoMostro, Arma arma, int livelloMostro)
+        public Mostro(string nomeMostro, string tipoMostro, Arma arma, int livelloMostro, int puntiVita)
         {
             NomeMostro = nomeMostro;
             TipoMostro = tipoMostro;
             Arma = arma;
             LivelloMostro = livelloMostro;
+            PuntiVita = puntiVita;
         }
     }
 

@@ -9,7 +9,7 @@ namespace MostriVsEroi.MockRepository
 {
    public class ArmaMockRepository
     {
-        public List<Arma> FetchArmiMago(Utente utente)
+        public List<Arma> FetchArmiMago()
         {
             List<Arma> armi = new List<Arma>();
             armi.Add(new Arma("Arco e frecce",8));
@@ -19,7 +19,7 @@ namespace MostriVsEroi.MockRepository
             armi.Add(new Arma("Pugnale",5));
             return armi;
         }
-        public List<Arma> FetchArmiGuerriero(Utente utente)
+        public List<Arma> FetchArmiGuerriero()
         {
             List<Arma> armi = new List<Arma>();
             armi.Add(new Arma("Alabarda", 15));

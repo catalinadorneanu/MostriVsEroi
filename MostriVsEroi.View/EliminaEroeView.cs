@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MostriVsEroi.Services;
 using MostriVsEroi.Core;
+using MostriVsEroi.Services;
 
 namespace MostriVsEroi.View
 {
-    class EroeView
+    internal class EliminaEroeView
     {
-        public static Eroe ScegliEroe(Utente utente)
+        internal static void EliminaEroe(Utente utente)
         {
             Console.WriteLine("Scegli eroe");
             List<Eroe> eroi = EroeServices.GetEroi(utente);
@@ -32,14 +29,11 @@ namespace MostriVsEroi.View
                     conversione = int.TryParse(Console.ReadLine(), out eroeScelto);
                 } while (!conversione || eroeScelto < 1 || eroeScelto > eroi.Count);
 
-                return eroi[--eroeScelto];
+                Eroe eroeEliminato = eroi[--eroeScelto];
+                EroeServices.DeleteEroe(utente, eroeEliminato);
+                Console.WriteLine($"{eroeEliminato.NomeEroe} eliminato con successo");
             }
-            else
-            {
-                Console.WriteLine("Nessun eroe in lista");
-                return null; //return new Eroe
-            }
-
+           
         }
     }
 }

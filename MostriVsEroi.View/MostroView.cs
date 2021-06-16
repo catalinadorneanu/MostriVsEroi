@@ -10,10 +10,10 @@ namespace MostriVsEroi.View
 {
     public class MostroView
     {
-        public static Mostro ScegliMostro(Utente utente)
+        public static Mostro ScegliMostro(Eroe eroe)
         {
             
-            List<Mostro> mostri = MostroServices.GetMostri(utente);
+            List<Mostro> mostri = MostroServices.GetMostri(eroe);
             int scelta = 0;
             if (mostri.Count > 0)
             {

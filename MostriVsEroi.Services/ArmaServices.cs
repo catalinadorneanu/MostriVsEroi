@@ -11,14 +11,14 @@ namespace MostriVsEroi.Services
    public class ArmaServices
     {
         static ArmaMockRepository amr = new ArmaMockRepository();
-        public static List<Arma> GetArmiMago(Utente utente)
+        public static List<Arma> GetArmiMago()
         {
-            return amr.FetchArmiMago(utente);
+            return amr.FetchArmiMago();
                
         }
-        public static List<Arma> GetArmiGuerriero(Utente utente)
+        public static List<Arma> GetArmiGuerriero()
         {
-            return amr.FetchArmiGuerriero(utente);
+            return amr.FetchArmiGuerriero();
             
         }
     }
