@@ -13,7 +13,7 @@ namespace MostriVsEroi.View
             //scelta mostro - done
             //partita - done
             //calcolo livello e punteggio - todo
-            //giocare ancora - todo
+            //giocare ancora - done
 
             Eroe eroe = EroeView.ScegliEroe(utente);
             List<Mostro> mostri = MostroServices.GetMostri(utente);
@@ -53,6 +53,16 @@ namespace MostriVsEroi.View
                 Menu.MenuNonAdmin(utente);
             }
 
+            Console.WriteLine("Vuoi giocare ancora? S/N");
+            string choice = Console.ReadLine();
+            if (choice.ToUpper() == "S")
+            {
+                Gioca(utente);
+            }
+            if (choice.ToUpper() == "N")
+            {
+                Menu.MenuNonAdmin(utente);
+            }
         }
 
         private static void MostroAttaccaEroe(Mostro mostro, Eroe eroe)
