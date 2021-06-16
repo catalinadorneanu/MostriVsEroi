@@ -9,11 +9,11 @@ namespace MostriVsEroi.View
     {
         internal static void Gioca(Utente utente)
         {
-            //scelta eroe
-            //scelta mostro
-            //partita
-            //calcolo livello e punteggio
-            //giocare ancora
+            //scelta eroe - done
+            //scelta mostro - done
+            //partita - done
+            //calcolo livello e punteggio - todo
+            //giocare ancora - todo
 
             Eroe eroe = EroeView.ScegliEroe(utente);
             List<Mostro> mostri = MostroServices.GetMostri(utente);
@@ -33,17 +33,37 @@ namespace MostriVsEroi.View
             string scelta = Console.ReadLine();
             if (scelta.ToUpper() == "A")
             {
-               
-                    int puntiEroe = mostro.PuntiVita - eroe.Arma.PuntiDanno;
-                
+                while (eroe.PuntiVita > 0 && mostro.PuntiVita > 0)
+                {
+                    EroeAttaccaMostro(mostro, eroe);
+                    MostroAttaccaEroe(mostro, eroe);
+                }
+                if (eroe.PuntiVita <=0)
+                {
+                    Console.WriteLine("Hai perso");
+                }
+                if (mostro.PuntiVita <= 0)
+                {
+                    Console.WriteLine("Hai vinto");
+                }
             }
             if (scelta.ToUpper() == "F")
             {
-
+               
+                Menu.MenuNonAdmin(utente);
             }
 
         }
 
-        
+        private static void MostroAttaccaEroe(Mostro mostro, Eroe eroe)
+        {
+            eroe.PuntiVita = eroe.PuntiVita - mostro.Arma.PuntiDanno;
+        }
+
+        private static void EroeAttaccaMostro(Mostro mostro, Eroe eroe)
+        {
+            
+            mostro.PuntiVita = mostro.PuntiVita - eroe.Arma.PuntiDanno;
+        }
     }
 }
