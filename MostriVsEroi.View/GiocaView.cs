@@ -16,20 +16,34 @@ namespace MostriVsEroi.View
             //giocare ancora
 
             Eroe eroe = EroeView.ScegliEroe(utente);
-            if (eroe.NomeEroe != null)
-            {
-                Mostro monster = MostroView.ScegliMostro(utente);
+            List<Mostro> mostri = MostroServices.GetMostri(utente);
+            Mostro mostro = MostroView.ScegliMostro(utente);
 
-                if (monster.LivelloMostro > eroe.Livello)
+            if (mostro.LivelloMostro <= eroe.Livello)
+            {
+                foreach (Mostro m in mostri)
                 {
                     MostroView.ScegliMostro(utente);
                 }
-                else
-                {
-                    Console.WriteLine($"{eroe.NomeEroe} vs {monster.NomeMostro}");
-                }
+            }
+
+            Console.WriteLine($"{eroe.NomeEroe} vs {mostro.NomeMostro}");
+            Console.WriteLine("Accetti la sfida?");
+            Console.WriteLine("Premi A per Attaccare ed F per Fuggire");
+            string scelta = Console.ReadLine();
+            if (scelta.ToUpper() == "A")
+            {
+               
+                    int puntiEroe = mostro.PuntiVita - eroe.Arma.PuntiDanno;
+                
+            }
+            if (scelta.ToUpper() == "F")
+            {
 
             }
+
         }
+
+        
     }
 }

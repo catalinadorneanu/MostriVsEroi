@@ -14,8 +14,7 @@ namespace MostriVsEroi.View
         {
             Console.WriteLine("Scegli eroe");
             List<Eroe> eroi = EroeServices.GetEroi(utente);
-            if (eroi.Count > 0)
-            {
+           
 
                 int count = 1;
                 bool conversione = false;
@@ -33,13 +32,7 @@ namespace MostriVsEroi.View
                 } while (!conversione || eroeScelto < 1 || eroeScelto > eroi.Count);
 
                 return eroi[--eroeScelto];
-            }
-            else
-            {
-                Console.WriteLine("Nessun eroe in lista");
-                return null; //return new Eroe
-            }
-
+           
         }
     }
 }

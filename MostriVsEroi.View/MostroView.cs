@@ -14,18 +14,25 @@ namespace MostriVsEroi.View
         {
             
             List<Mostro> mostri = MostroServices.GetMostri(utente);
-            int scelta = 0;
-            if (mostri.Count > 0)
-            {
-                Random rnd = new Random();
-                scelta = rnd.Next(0, mostri.Count - 1);
+            Random r = new Random();
+            int index = r.Next(mostri.Count);
+            Mostro mostro = mostri[index];
 
-                return mostri[scelta];
-            }
-            else
-            {
-                return null;
-            }
+            return mostro;
+
+
+            //int scelta = 0;
+            //if (mostri.Count > 0)
+            //{
+            //    Random rnd = new Random();
+            //    scelta = rnd.Next(0, mostri.Count - 1);
+
+            //    return mostri[scelta];
+            //}
+            //else
+            //{
+            //    return null;
+            //}
 
         }
     }
