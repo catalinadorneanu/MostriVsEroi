@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MostriVsEroi.Core\MostriVsEroi.Core.csproj" />
+    <ProjectReference Include="..\MostriVsEroi.DbManager\MostriVsEroi.DbManager.csproj" />
     <ProjectReference Include="..\MostriVsEroi.MockRepository\MostriVsEroi.MockRepository.csproj" />
   </ItemGroup>
 

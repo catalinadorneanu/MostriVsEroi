@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using MostriVsEroi.Core;
 
-namespace MostriVsEroi.DbManagerRepository
+namespace MostriVsEroi.DbManager
 {
     public class UtenteDbRepository : IUtenteRepository
 

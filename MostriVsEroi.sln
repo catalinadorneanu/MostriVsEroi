@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.SchermataServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.View", "MostriVsEroi.View\MostriVsEroi.View.csproj", "{65ED2573-3D32-4B41-9485-72A8CE62EB29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.DbManagerRepository", "MostriVsEroi.DbManager\MostriVsEroi.DbManagerRepository.csproj", "{82A4126E-F06A-483D-931A-6765E3E5F1EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostriVsEroi.DbManager", "MostriVsEroi.DbManager\MostriVsEroi.DbManager.csproj", "{82A4126E-F06A-483D-931A-6765E3E5F1EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

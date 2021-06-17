@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MostriVsEroi.DbManagerRepository
+namespace MostriVsEroi.DbManager
 {
-    class DbConnectionRepository
+    public class DbConnectionRepository
     {
         const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
          "Initial Catalog = MostriVsEroi;" +

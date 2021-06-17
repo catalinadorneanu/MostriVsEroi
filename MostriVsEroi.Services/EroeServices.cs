@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MostriVsEroi.Core;
+using MostriVsEroi.DbManager;
 using MostriVsEroi.MockRepository;
 
 namespace MostriVsEroi.Services
 {
     public class EroeServices
     {
-        static EroeMockRepository emr = new EroeMockRepository();
+        //static EroeMockRepository emr = new EroeMockRepository();
+        static EroeDbRepository emr = new EroeDbRepository();
         public static List<Eroe> GetEroi(Utente utente)
         {
             return emr.FetchEroi(utente);

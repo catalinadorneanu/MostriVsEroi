@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using MostriVsEroi.MockRepository;
 using MostriVsEroi.Core;
+using MostriVsEroi.DbManager;
 
 namespace MostriVsEroi.Services
 {
    public class ArmaServices
     {
         static ArmaMockRepository amr = new ArmaMockRepository();
+        //static ArmaDbRepository amr = new ArmaDbRepository();
         public static List<Arma> GetArmiMago()
         {
             return amr.FetchArmiMago();
