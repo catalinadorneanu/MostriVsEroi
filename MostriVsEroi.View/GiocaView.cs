@@ -33,23 +33,29 @@ namespace MostriVsEroi.View
             string scelta = Console.ReadLine();
             if (scelta.ToUpper() == "A")
             {
-                while (eroe.PuntiVita > 0 && mostro.PuntiVita > 0)
+                //vitaMostro = vitaMostro - armaEroe
+                mostro.PuntiVita = mostro.PuntiVita - eroe.Arma.PuntiDanno;
+              
+                //se vita mostro > 0
+                if (mostro.PuntiVita > 0)
                 {
-                    EroeAttaccaMostro(mostro, eroe);
-                    MostroAttaccaEroe(mostro, eroe);
+                    //vitaEroe = vitaEroe - armaMostro
+                    eroe.PuntiVita = eroe.PuntiVita - mostro.Arma.PuntiDanno;
                 }
-                if (eroe.PuntiVita <=0)
+                //se vita eroe < 0
+                if (eroe.PuntiVita < 0)
                 {
+                    //hai perso
                     Console.WriteLine("Hai perso");
                 }
-                if (mostro.PuntiVita <= 0)
+                else
                 {
                     Console.WriteLine("Hai vinto");
                 }
             }
             if (scelta.ToUpper() == "F")
             {
-               
+
                 Menu.MenuNonAdmin(utente);
             }
 
@@ -65,15 +71,15 @@ namespace MostriVsEroi.View
             }
         }
 
-        private static void MostroAttaccaEroe(Mostro mostro, Eroe eroe)
-        {
-            eroe.PuntiVita = eroe.PuntiVita - mostro.Arma.PuntiDanno;
-        }
+        //private static void MostroAttaccaEroe(Mostro mostro, Eroe eroe)
+        //{
+        //    eroe.PuntiVita = eroe.PuntiVita - mostro.Arma.PuntiDanno;
+        //}
 
-        private static void EroeAttaccaMostro(Mostro mostro, Eroe eroe)
-        {
-            
-            mostro.PuntiVita = mostro.PuntiVita - eroe.Arma.PuntiDanno;
-        }
+        //private static void EroeAttaccaMostro(Mostro mostro, Eroe eroe)
+        //{
+
+        //    mostro.PuntiVita = mostro.PuntiVita - eroe.Arma.PuntiDanno;
+        //}
     }
 }

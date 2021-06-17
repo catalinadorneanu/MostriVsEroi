@@ -9,6 +9,7 @@ namespace MostriVsEroi.Core
     public interface IUtenteRepository
     {
         public Utente GetUser(Utente utente);
-        
+        void AddUtente(Utente utente);
     }
+    
 }
