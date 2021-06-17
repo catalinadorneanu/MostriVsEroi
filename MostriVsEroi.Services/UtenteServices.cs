@@ -1,7 +1,7 @@
 ﻿using System;
-//using MostriVsEroi.MockRepository;
+using MostriVsEroi.MockRepository;
 using MostriVsEroi.Core;
-using MostriVsEroi.DbManagerRepository;
+using MostriVsEroi.DbManager;
 
 namespace MostriVsEroi.Services
 {
@@ -9,8 +9,8 @@ namespace MostriVsEroi.Services
     {
 
 
-        //static UtenteMockRepository umr = new UtenteMockRepository();
-         static UtenteDbRepository umr = new UtenteDbRepository();
+        static UtenteMockRepository umr = new UtenteMockRepository();
+        //static UtenteDbRepository umr = new UtenteDbRepository();
         public static Utente VerifyAuthentication(Utente utente)
             {
                 return umr.GetUser(utente);

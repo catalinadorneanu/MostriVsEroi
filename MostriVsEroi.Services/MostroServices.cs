@@ -12,8 +12,8 @@ namespace MostriVsEroi.Services
     public class MostroServices
     {
 
-        //static MostroMockRepository mmr = new MostroMockRepository();
-        static MostroDbRepository mmr = new MostroDbRepository();
+        static MostroMockRepository mmr = new MostroMockRepository();
+        //static MostroDbRepository mmr = new MostroDbRepository();
         public static List<Mostro> GetMostri(Utente utente)
             {
             return mmr.FetchMostri(utente);
