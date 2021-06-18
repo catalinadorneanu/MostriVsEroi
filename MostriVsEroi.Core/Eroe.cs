@@ -16,7 +16,7 @@ namespace MostriVsEroi.Core
         {
 
         }
-        public Eroe(string nomeEroe, string tipoEroe, Arma arma )
+        public Eroe(string nomeEroe, string tipoEroe, Arma arma, int livello, int puntiVita, int puntiAccumulati )
         {
             NomeEroe = nomeEroe;
             TipoEroe = tipoEroe;

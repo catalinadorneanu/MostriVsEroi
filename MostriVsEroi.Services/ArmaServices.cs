@@ -9,19 +9,24 @@ using MostriVsEroi.DbManager;
 
 namespace MostriVsEroi.Services
 {
-   public class ArmaServices
+    public class ArmaServices
     {
-        static ArmaMockRepository amr = new ArmaMockRepository();
-        //static ArmaDbRepository amr = new ArmaDbRepository();
-        public static List<Arma> GetArmiMago()
+        //static ArmaMockRepository amr = new ArmaMockRepository();
+        static ArmaDbRepository amr = new ArmaDbRepository();
+        //public static List<Arma> GetArmiMago()
+        //{
+        //    return amr.FetchArmiMago();
+
+        //}
+        //public static List<Arma> GetArmiGuerriero()
+        //{
+        //    return amr.FetchArmiGuerriero();
+
+        //}
+        public static List<Arma> GetArmi()
         {
-            return amr.FetchArmiMago();
-               
-        }
-        public static List<Arma> GetArmiGuerriero()
-        {
-            return amr.FetchArmiGuerriero();
-            
+
+            return amr.FetchArmi();
         }
     }
 }

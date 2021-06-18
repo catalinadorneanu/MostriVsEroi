@@ -7,15 +7,12 @@ using MostriVsEroi.DbManager;
 
 namespace MostriVsEroi.Services
 {
-    class CategoriaServices
+    public class LivelloServices
     {
-      
-        static CategoriaDbRepository cmr = new CategoriaDbRepository();
-        public static List<string> GetCategorie()
+        static LivelloDbRepository lmr = new LivelloDbRepository();
+        public static List<int> GetLivello()
         {
-            return cmr.FetchCategorie();
-
+            return lmr.FetchLivelli();
         }
-
     }
 }

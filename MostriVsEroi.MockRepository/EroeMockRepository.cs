@@ -13,8 +13,8 @@ namespace MostriVsEroi.MockRepository
         public List<Eroe> FetchEroi(Utente utente) 
         {
             
-            eroi.Add(new Eroe("Bugbear", "Guerriero", new Arma("Ascia",8)));
-            eroi.Add(new Eroe("Aasimar", "Mago", new Arma("Bastone Magico",10)));
+            //eroi.Add(new Eroe("Bugbear", "Guerriero", new Arma("Ascia",8)));
+            //eroi.Add(new Eroe("Aasimar", "Mago", new Arma("Bastone Magico",10)));
             return eroi;
         }
         public void AggiungiEroe(Utente utente, Eroe eroe)

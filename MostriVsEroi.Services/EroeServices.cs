@@ -11,8 +11,8 @@ namespace MostriVsEroi.Services
 {
     public class EroeServices
     {
-        static EroeMockRepository emr = new EroeMockRepository();
-        //static EroeDbRepository emr = new EroeDbRepository();
+        //static EroeMockRepository emr = new EroeMockRepository();
+        static EroeDbRepository emr = new EroeDbRepository();
         public static List<Eroe> GetEroi(Utente utente)
         {
             return emr.FetchEroi(utente);
