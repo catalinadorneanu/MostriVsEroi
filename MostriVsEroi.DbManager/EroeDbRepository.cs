@@ -24,15 +24,13 @@ namespace MostriVsEroi.DbManager
                 var nome = (string)reader[1];
                 var nomeArma =(string) reader[2];
                 var puntiDanno = (int)reader[3];
-                
-               
                 var puntiAccumulati = (int)reader[4];
-               // var tipo =(string) reader[5];
+                var tipo =(string) reader[5];
                 var personaggio = (string)reader[6];
                 var livello = (int)reader[7];
                 var puntiVita = (int)reader[8];
 
-                Eroe e = new Eroe (nome,personaggio,new Arma(nomeArma, puntiDanno),livello, puntiVita,puntiAccumulati);
+                Eroe e = new Eroe (nome,new Categoria (personaggio,tipo),new Arma(nomeArma, puntiDanno),livello, puntiVita,puntiAccumulati);
                 eroi.Add(e);
             }
             connection.Close();

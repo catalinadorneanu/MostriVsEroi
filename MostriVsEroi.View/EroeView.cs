@@ -23,7 +23,7 @@ namespace MostriVsEroi.View
                 {
                     foreach (Eroe eroe in eroi)
                     {
-                        Console.WriteLine($"Premi {count++} per scegliere l'eroe {eroe.NomeEroe}, di tipo {eroe.TipoEroe}" +
+                        Console.WriteLine($"Premi {count++} per scegliere l'eroe {eroe.NomeEroe}, di tipo {eroe.Categoria.Personaggio}, {eroe.Categoria.Tipo}" +
                             $" con arma {eroe.Arma.NomeArma} che ha {eroe.Arma.PuntiDanno} punti danno, di livello {eroe.Livello} e vita {eroe.PuntiVita}");
 
                     }
