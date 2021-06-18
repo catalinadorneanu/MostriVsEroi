@@ -10,9 +10,10 @@ namespace MostriVsEroi.DbManager
         public void AddUtente(Utente utente)
         {
             DbConnectionRepository.Connection(out SqlConnection connection, out SqlCommand cmd);
-            cmd.CommandText = "insert into dbo.Utenti values (@Username, @Password)";
+            cmd.CommandText = "insert into dbo.Utenti values (@Username, @Password @IsAdmin)";
             cmd.Parameters.AddWithValue("@Username", utente.Username);
             cmd.Parameters.AddWithValue("@Password", utente.Password);
+            cmd.Parameters.AddWithValue("@IsAdmin", false);
             cmd.ExecuteNonQuery();
             connection.Close();
         }

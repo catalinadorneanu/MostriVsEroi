@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MostriVsEroi.Core;
 using MostriVsEroi.DbManager;
 
 namespace MostriVsEroi.Services
 {
-    class CategoriaServices
+   public class CategoriaServices
     {
       
         static CategoriaDbRepository cmr = new CategoriaDbRepository();
-        public static List<string> GetCategorie()
+        public static List<Categoria> GetCategorieEroi()
         {
-            return cmr.FetchCategorie();
+            return cmr.FetchCategorieEroi();
 
         }
 
